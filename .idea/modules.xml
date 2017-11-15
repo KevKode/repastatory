@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/repastatory.iml" filepath="$PROJECT_DIR$/.idea/repastatory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../repastatory-webpack/.idea/repastatory-webpack.iml" filepath="$PROJECT_DIR$/../repastatory-webpack/.idea/repastatory-webpack.iml" />
-    </modules>
-  </component>
-</project>
