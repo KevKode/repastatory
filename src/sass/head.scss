@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: solid black 3px;
+
+  margin: 0 0 70px 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+
+  li:first-child {
+    //margin-right: auto;
+  }
+
+  a {
+    color: black;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 100%;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  .logo {
+    width: 175px;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+
+      img {
+        filter: invert(100%);
+      }
+    }
+  }
+}

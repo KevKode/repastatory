@@ -1,0 +1,32 @@
+{
+  "name": "repastatory",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react-router": "^4.0.16",
+    "@types/react-router-dom": "^4.0.8",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts-ts": "^2.8.0",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
+    "start-ts": "react-scripts-ts start",
+    "start": "npm-run-all -p watch-css start-ts",
+    "build": "npm run build-css && react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/node": "^8.0.47",
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2"
+  }
+}
