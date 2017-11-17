@@ -9,14 +9,14 @@ import '../css/body.css';
 export class Body extends React.Component {
     render() {
         return (
-            <div className="body">
+            <main>
                 <Switch>
-                    <Route path='/home' render={()=><Home />} />
+                    <Route exact path='/' render={()=><Home />} />
                     <Route path='/one' render={()=><One />} />
                     <Route path='/two' render={()=><Two />} />
                     <Route render={()=><FourOhFour />} />
                 </Switch>
-            </div>
+            </main>
         );
     }
 }
