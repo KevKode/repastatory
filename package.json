@@ -13,7 +13,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "^2.8.0",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "shortid": "^2.2.8"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/",

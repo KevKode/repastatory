@@ -1,4 +1,8 @@
 .button {
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
   border: 2px solid black;
   color: black;
   background-color: white;

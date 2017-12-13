@@ -1,0 +1,6 @@
+@mixin color-fade($hover-transition-time) {
+  -moz-transition: color $hover-transition-time linear;
+  -o-transition: color $hover-transition-time linear;
+  -webkit-transition: color $hover-transition-time linear;
+  transition: color $hover-transition-time linear;
+}

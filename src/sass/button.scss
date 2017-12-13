@@ -1,4 +1,8 @@
+@import "./variables";
+
 .button {
+  @include color-fade(.1s);
+
   border: 2px solid black;
   color: black;
   background-color: white;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/head.css';
+import { array_of_copypastas } from "./Databse";
 
 export class Head extends React.Component {
     render() {
@@ -11,8 +12,12 @@ export class Head extends React.Component {
                         <li><Link to="/" className="logo">
                             <img className="logo-black" src={require("../media/images/pasta-header.png")} />
                         </Link></li>
-                        <li><Link to="/one">one</Link></li>
-                        <li><Link to="/two">two</Link></li>
+                        {
+                            array_of_copypastas.map(function(copypasta) {
+                                return <li key={ copypasta.id }><Link to={ '/' + copypasta.id }>{ copypasta.title }</Link></li>
+                            })
+                        }
+                        <li><Link to="/404">404</Link></li>
                     </ul>
                 </nav>
             </header>

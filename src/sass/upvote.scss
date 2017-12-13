@@ -1,0 +1,35 @@
+@import "./variables";
+
+.voting {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upvotes {
+  font-size: 23px;
+}
+
+
+.vote-button {
+  @include color-fade(.1s);
+
+  cursor: pointer;
+  color: gray;
+
+  &:hover {
+    color: black;
+  }
+
+  &_selected {
+    cursor: pointer;
+    color: black;
+  }
+
+  &_disabled {
+    @include color-fade(.1s);
+
+    cursor: not-allowed;
+    color: lightgray;
+  }
+}
